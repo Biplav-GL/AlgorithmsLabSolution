@@ -5,14 +5,14 @@ import com.gl.algorithSolutions.services.TransactionCalculator;
 public class QuestionOneMain {
 
 	public static void main(String[] args) {
-		
+
 		//Taking the inputs from the User
 		Scanner sc = new Scanner(System.in);
 		
 		//Input size of Transaction Array
 		System.out.println("Enter the size of Transaction Array");
 		int arraySize = sc.nextInt();
-		int[] tansactionArray = new int[arraySize];
+		int[] transactionArray = new int[arraySize];
 		
 		//Taking the values of array as a String in one Line (Following question Test Case)
 		sc.nextLine();
@@ -20,7 +20,7 @@ public class QuestionOneMain {
 		String inputArrayValues = sc.nextLine();
 		String[] arrayValues = inputArrayValues.split(" ");		   
 		for(int counter = 0; counter < arraySize; counter++) {
-			tansactionArray[counter] = Integer.parseInt(arrayValues[counter]);
+			transactionArray[counter] = Integer.parseInt(arrayValues[counter]);
 		}
 		
 		//Asking about the number of Transaction needed.
@@ -32,7 +32,7 @@ public class QuestionOneMain {
 		for(int counter = 0; counter<numberOfTargets; counter++) {
 			System.out.println("Enter the value of target");
 			int target = sc.nextInt();
-			int transcationDay = tc.CalculateTransactionDay(tansactionArray, target);
+			int transcationDay = tc.CalculateTransactionDay(transactionArray, target);
 			if (transcationDay == -1) {
 				System.out.println("Given target is not achieved ");
 			}else {

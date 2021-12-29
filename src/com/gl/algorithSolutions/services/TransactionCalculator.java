@@ -2,13 +2,12 @@ package com.gl.algorithSolutions.services;
 
 public class TransactionCalculator {
 
-	public int CalculateTransactionDay(int[] tansactionArray, int target) {
+	public int CalculateTransactionDay(int[] transactionArray, int target) {
 		int totalMoney = 0;
-		for (int i = 0;i<tansactionArray.length; i++) {
-			totalMoney += tansactionArray[i];
+		for (int i = 0;i<transactionArray.length; i++) {
+			totalMoney += transactionArray[i];
 			if(target<totalMoney) {
-				int transcationDay = i+1;
-				return transcationDay;
+				return i+1;
 			}				
 		}
 		return -1;

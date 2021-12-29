@@ -11,7 +11,7 @@ public class QuestionTwoMain {
 		
 		//Taking the inputs from the User
 		Scanner sc = new Scanner(System.in);
-		
+
 		//Input the Number of Currency Present
 		System.out.println("Enter the size of currency denominations");
 		int sizeOfCurrencyDeno = sc.nextInt();
